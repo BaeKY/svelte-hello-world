@@ -1,12 +1,13 @@
 {
-  "name": "@baeky/svelte-example",
-  "version": "1.0.0",
+  "name": "svelte-example",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear --port 5555",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "docker:push": "./scripts/docker-push.sh"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
@@ -18,7 +19,6 @@
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-svelte": "^7.1.0",
     "rollup-plugin-terser": "^7.0.2",
-    "standard": "^16.0.4",
     "svelte": "^3.44.1",
     "svelte-check": "^2.2.8",
     "svelte-preprocess": "^4.9.8",
